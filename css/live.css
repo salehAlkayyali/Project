@@ -1,0 +1,413 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.blue {
+  color: #1c71be;
+}
+.text-center {
+  text-align: center;
+}
+.active {
+  background-color: #fff;
+  color: #1c71be;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.links-menu {
+  position: absolute;
+  top: 70px;
+  right: 5%;
+  background-color: #fff;
+  list-style: none;
+  text-align: center;
+  z-index: 10000;
+  display: none;
+}
+.links-menu li {
+  margin-bottom: 10px;
+  padding: 15px 60px;
+}
+.links-menu li a {
+  color: #1c71be;
+  text-decoration: none;
+}
+.active-menu {
+  background-color: #1c71be;
+}
+.active-menu a {
+  color: #fff !important;
+}
+.show {
+  display: block !important;
+}
+/* Start header */
+
+header {
+  position: relative;
+  height: 335px;
+}
+
+header .background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+header nav {
+  padding-top: 30px;
+}
+header nav .img {
+  width: 10%;
+}
+header nav .img img {
+  width: 100%;
+}
+@media (max-width: 975px) {
+  header {
+    margin-bottom: 60px;
+  }
+  header .background {
+    height: 100%;
+  }
+  header nav .img {
+    width: 20%;
+    padding-top: 5px;
+  }
+}
+
+/* start links */
+
+header nav ul {
+  width: 90%;
+  text-align: end;
+}
+nav i {
+  display: none !important;
+  color: #fff;
+  font-size: 30px !important;
+  cursor: pointer;
+}
+
+@media (max-width: 975px) {
+  nav ul {
+    display: none;
+  }
+  nav i {
+    display: block !important;
+  }
+}
+header nav ul li {
+  margin-left: 30px;
+  display: inline-block;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+header h1 {
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 80px;
+}
+
+@media (max-width: 975px) {
+  header nav .img {
+    width: 20%;
+    padding-top: 5px;
+  }
+}
+@media (max-width: 700px) {
+  nav i {
+    font-size: 26px !important;
+  }
+}
+@media (max-width: 400px) {
+  header nav .img {
+    width: 30%;
+    padding-top: 0;
+  }
+}
+/* Start Ball */
+.ball {
+  width: 50%;
+  height: 350px;
+  margin: auto;
+  position: relative;
+  margin-top: -125px;
+}
+.ball .ballimg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ball .group {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.ball-parg {
+  width: 61%;
+  margin: auto;
+  margin-top: 50px;
+}
+@media (max-width: 975px) {
+  .ball {
+    width: 60%;
+    margin-top: 0px;
+  }
+  .ball-parg {
+    width: 80%;
+  }
+}
+@media (max-width: 800px) {
+  .ball {
+    width: 70%;
+    margin-top: 0px;
+  }
+}
+@media (max-width: 600px) {
+  .ball {
+    width: 100%;
+    margin-top: 0px;
+  }
+  .ball-parg {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .ball {
+    height: 250px;
+  }
+}
+@media (max-width: 300px) {
+  .ball {
+    height: 200px;
+  }
+}
+/* Start PC */
+.Pc {
+  margin-top: 100px;
+}
+.Pc .imgPc {
+  width: 50%;
+  padding: 0 0px 0 100px;
+}
+
+.Pc .imgPc img {
+  width: 80%;
+}
+
+.Pc .parg {
+  width: 50%;
+  padding: 0 150px 0 0;
+}
+
+.Pc .parg p {
+  line-height: 23px;
+}
+
+.Pc .parg li {
+  margin-bottom: 10px;
+}
+@media (max-width: 975px) {
+  .Pc .imgPc {
+    width: 100%;
+    padding: 0 0 0 20px;
+    text-align: center;
+  }
+  .Pc .imgPc img {
+    width: 60%;
+  }
+  .Pc .parg {
+    width: 100%;
+    padding: 0;
+    margin-top: 50px;
+    text-align: center;
+  }
+}
+@media (max-width: 400px) {
+  .Pc .imgPc img {
+    width: 100%;
+  }
+}
+/* Start Phone */
+.phone {
+  margin-top: 100px;
+}
+.phone .parg {
+  width: 50%;
+  padding: 0 0 0 150px;
+}
+.phone .parg p {
+  line-height: 23px;
+}
+.phone .imgPhone {
+  width: 50%;
+  padding: 0 100px 0 50px;
+}
+
+.phone .imgPhone img {
+  width: 60%;
+}
+@media (max-width: 975px) {
+  .phone {
+    margin-top: 50px;
+  }
+  .phone .parg {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  .phone .imgPhone {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    padding: 0;
+  }
+  .phone .imgPhone img {
+    width: 40%;
+  }
+}
+@media (max-width: 400px) {
+  .phone .imgPhone img {
+    width: 80%;
+  }
+}
+/* Get Started */
+
+.Started {
+  width: 85%;
+  margin: auto;
+  margin-top: 300px;
+  position: relative;
+  background-color: #1c71be10;
+}
+
+.Started .ready {
+  background-image: url(../img/liveScanner/Mask.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 118px 40px;
+  border-radius: 0 30px 30px 0;
+  z-index: 100;
+}
+.Started .ready .text {
+  width: 70%;
+  margin: auto;
+}
+
+.Started .ready .text .parg {
+  width: 58%;
+}
+.Started .ready .text .parg h3 {
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.Started .ready .text .parg p {
+  font-size: 19px;
+  color: #fff;
+  margin-top: 0;
+}
+.Started .ready .text .button {
+  width: 40%;
+  position: relative;
+}
+
+.Started .ready .text .button button {
+  background-color: #fff;
+  border: none;
+  border-radius: 30px;
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+@media (max-width: 975px) {
+  .Started {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .Started {
+    width: 100%;
+  }
+  .Started .ready {
+    height: 500px;
+  }
+  .Started .ready .text {
+    width: 90%;
+  }
+  .Started .ready .text .parg {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .Started .ready .text .button {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .Started .ready {
+    height: 600px;
+  }
+}
+/* Start Footer */
+
+footer {
+  margin-top: 600px;
+  background-color: #1c71be;
+  color: #fff;
+  padding: 20px;
+}
+footer span {
+  display: inline-block;
+  cursor: pointer;
+}
+footer img {
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 5px;
+  position: relative;
+  top: 7px;
+}
